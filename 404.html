@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="offline" manifest="blurb.manifest">
+  
+<head>
+    <!--content type : HTML -->
+    <meta http-equiv="content-type" 
+        content="text/html; charset=UTF-8">
+  
+    <!-- Making viewport responsive -->
+    <meta name="viewport" content=
+        "width=device-width,minimum-scale=1,
+        initial-scale=1">
+  
+    <!-- Loading jQuery, jQuery.terminal, 
+        and style sheet -->
+    <script src=
+        "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+  
+    <script src=
+"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
+    </script>
+  
+    <link rel="stylesheet" href=
+"https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+<link rel="shortcut icon" href="https://terminal.jcubic.pl/favicon.ico">
+    <style type="text/css">
+        .terminal,
+        span,
+        .cmd,
+        div {
+            --color: rgba(0, 128, 0, 0.99);
+        }
+
+        .terminal,
+        span {
+            --size: 1.4;
+        }
+
+    </style>
+    <title>404 Page Not Found</title>
+</head>
+  
+<body>
+    <script>
+        $('body').terminal({   
+            cat: function(width, height) {
+                this.echo('This Is A Beta Command, It Does Not Work Offline')
+                const img = $('<img src="https://placekitten.com/' +
+                      width + '/' + height + '">');
+                this.echo(img);
+            },
+            dog: function(width, height) {
+                this.echo('This Is A Beta Command, It Does Not Work Offline')
+                const img = $('<img src="https://place.dog/' +
+                      width + '/' + height + '">');
+                this.echo(img);
+            },    
+            iam: function (name) {
+                this.echo('Hello, ' + name 
+                + '. Welcome to Whirlpool>_<');
+            },
+            creator: function () {
+                this.echo('Daniel Lu');
+            },
+            alert: function () {
+                alert('undefined');
+            },
+            alert_advanced: function (say) {
+                alert(say);
+            },
+            alert_extra_advanced: function (name) {
+                this.echo('type your name for this to work');
+                alert(name + ' is awesome!');
+            },
+            nealfun: function() {
+                alert('you are about to be redirected to neal.fun');
+                window.location.replace("https://neal.fun/");   
+            },
+            pranxcom: function() {
+                alert('you are about to be redirected to pranx.com');
+                window.location.replace("https://pranx.com/"); 
+            },
+            whirlpool: function () {
+                this.echo('Congrats - You Are One Of The First Few People'
+                + ' To Find Out This Secret Command Take A Break And Go '
+                + 'To neal.fun A Fun Website By Neal Agarwal');
+            },
+            help_advanced: function () {
+                this.echo('iam - iam command for'
+                +'whirlpool to recognize you'
+                +'\ncreator - to know the creator'
+                +'\nwhirlpool - undefined command'
+                +'\nthankyous - credits'
+                +'\ncat - cat space number space number'
+                +'\ndog - dog space number space number'
+                +'\nalert - gives a alert'
+                +'\nalert_advanced - gives a alert with your name in it'
+                +'\nalert_extra_advanced - suprise alert'
+                +'\nnealfun - you will know'
+                +'\npranxcom - you will know');
+            },
+            thankyous: function () {
+                this.echo('Credits to Sandeep Jain, Jakub T. Jankiewicz & Geeks for Geeks, ITNEXT')
+            },
+            help: function () {
+                this.echo('iam - iam command for'
+                + ' whirlpool to recognize you'
+                + '\ncreator - to know the creator'
+                +'\nhelp_advanced - to get advanced help'
+                +'\ncat - cat space number space number'
+                +'\ndog - dog space number space number'
+                +'\nalert - gives a alert');
+            },
+        }, {
+            greetings:'    d8888   .d8888b.      d8888  '
+            +'\n   d8P888  d88P  Y88b    d8P888  '
+            +'\n  d8P 888  888    888   d8P 888  '
+            +'\n d8P  888  888    888  d8P  888 '
+            +'\nd88   888  888    888 d88   888  '
+            +'\n8888888888 888    888 8888888888 '
+            +'\n      888  Y88b  d88P       888  '
+            +'\n      888   "Y8888P"        888'
+            +'\nPPP       A      GGGGG   EEEEEEE      N      N    0000  TTTTTTT     FFFFFF  0000   U      U  N     N  DD'
+            +'\nP   PP   A A    G        E            N N    N  0     0    T        F      0    0  U      U  N N   N  D   D'
+            +'\nP PP    AAAAA  G    GGG  EEEEEEE      N   N  N  0      0   T        FFF   0      0 U      U  N  N  N  D    D'
+            +'\nP      A     A  G    G   E            N    N N   0    0    T        F     0     0   U    U   N   N N  D   D'
+            +'\nP     A       A  GGGG    EEEEEEE      N      N    0000     T        F      00000     UUUU    N     N  DDD'
+            +'\nThere is no /404 Page On This Server'
+            +'\nWhirlpool>_< -You must have came'
+            + ' to this random untrusted thingamajig by accident, close this tab'
+            + ' and carry on'
+        }); 
+    </script>
+    <noscript>You need to enable JavaScript to view this terminal.</noscript>
+</body>
+  
+</html>
